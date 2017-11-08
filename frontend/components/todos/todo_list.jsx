@@ -12,7 +12,7 @@ class TodoList extends React.Component {
         <ul>
           { todoItems }
         </ul>
-        <TodoForm />
+        <TodoForm receiveTodo={receiveTodo}/>
       </div>
     );
   }
