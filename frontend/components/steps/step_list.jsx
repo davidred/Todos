@@ -2,7 +2,13 @@ import React from 'react';
 
 class StepList extends React.Component {
   render() {
-    return(<h1>StepList</h1>);
+    const { steps } = this.props;
+    const stepItems = steps.map(step => <li>{step.title}</li>);
+    return(
+      <ul>
+        {stepItems}
+      </ul>
+    );
   }
 }
 
